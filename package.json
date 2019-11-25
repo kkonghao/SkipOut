@@ -3,18 +3,18 @@
   "displayName": "SkipOut",
   "description": "Tab out of quotes, brackets, etc",
   "version": "0.1.7",
-  "publisher": "albert",
+  "publisher": "kkonghao",
   "engines": {
     "vscode": "^1.0.0"
   },
   "bugs": {
-    "url": "https://github.com/albertromkes/tabout/issues",
-    "email": "albert@rainology.nl"
+    "url": "https://github.com/kkonghao/SkipOut/issues",
+    "email": "kkonghao@126.com"
   },
-  "homepage": "https://github.com/albertromkes/tabout",
+  "homepage": "https://github.com/kkonghao/SkipOut",
   "repository": {
     "type": "git",
-    "url": "https://github.com/albertromkes/tabout.git"
+    "url": "https://github.com/kkonghao/SkipOut.git"
   },
   "icon": "images/Tab-Key.jpg",
   "categories": [
