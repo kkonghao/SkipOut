@@ -1,0 +1,63 @@
+{
+  "name": "SkipOut",
+  "displayName": "SkipOut",
+  "description": "Tab out of quotes, brackets, etc",
+  "version": "0.1.7",
+  "publisher": "albert",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/albertromkes/tabout/issues",
+    "email": "albert@rainology.nl"
+  },
+  "homepage": "https://github.com/albertromkes/tabout",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albertromkes/tabout.git"
+  },
+  "icon": "images/Tab-Key.jpg",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "TabOut configuration",
+      "properties": {
+        "tabout.disableByDefault": {
+          "type": "boolean",
+          "default": false,
+          "description": "Disables the TabOut extension by default"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "toggle-tabout",
+        "title": "Toggle TabOut"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "tabout",
+        "key": "tab",
+        "mac": "tab",
+        "when": "editorTextFocus && !suggestWidgetVisible && !inSnippetMode && !editorHasMultipleSelections"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.5",
+    "vscode": "^0.11.0"
+  }
+}
